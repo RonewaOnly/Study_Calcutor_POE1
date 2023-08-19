@@ -1,0 +1,39 @@
+﻿<Window x:Class="POE_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" Loaded="WindowLoaded">
+    <Grid x:Name="MainForm" Background="#0A121E" RenderTransformOrigin="0.598,0.53">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Background="#55203F" UseLayoutRounding="True" Width="174" Cursor="Hand">
+            <Ellipse HorizontalAlignment="Center" Height="121" Margin="0,-34,0,0" Stroke="Black" VerticalAlignment="Top"  Width="134" Fill="White"/>
+            <Button x:Name="button" Content="Add Modules" HorizontalAlignment="Center" Height="43" Margin="0,116,0,0" VerticalAlignment="Top" Width="105" Click="AddModuleMethod"/>
+            <Button x:Name="button1" Content="View Modules" HorizontalAlignment="Left" Margin="35,241,0,148" Width="105" Click="ViewModuleMethod"/>
+
+        </Grid>
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Margin="174,-12,0,-6" Width="4"/>
+        <Label x:Name="Title" Content="Welcome to Study Calcutor" Visibility="Collapsed" HorizontalAlignment="Left" Height="63" BorderBrush="Gray" BorderThickness="10" Foreground="#FFA4D256" FontSize="24" FontStyle="Oblique" Padding="25,10,10,10" Margin="334,154,0,0" VerticalAlignment="Top" Width="309" Background="#FF4D4848" FontWeight="Bold" FontFamily="Bernard MT Condensed" RenderTransformOrigin="0.503,0.466"/>
+        <Grid x:Name="AddingModules_InputForm" HorizontalAlignment="Left" Background="#55203F" Height="434" Margin="179,-3,0,0" Visibility="Collapsed" VerticalAlignment="Top" Width="617">
+            <Label x:Name="label" Content="Study Calcutor" HorizontalAlignment="Center" Height="41" Foreground="White" FontStyle="Italic" FontSize="21" FontWeight="ExtraLight" Padding="250,5,10,10" Margin="0,10,0,0" VerticalAlignment="Top" Width="597"/>
+            <Label x:Name="label1" Content="Please enter the information to be give the best result..." Foreground="Gray" Padding="30,20,10,10" FontSize="20" HorizontalAlignment="Left" Height="71" Margin="44,56,0,0" VerticalAlignment="Top" Width="550"/>
+            <Label x:Name="Qu1" Content="Enter Module Code:" HorizontalAlignment="Left" Height="42" Foreground="White" Margin="44,140,0,0" Padding="15,15,10,10" VerticalAlignment="Top" Width="139"/>
+            <TextBox x:Name="ModCodeAns" HorizontalAlignment="Left" Height="42" Margin="183,140,0,0" Padding="10,10,10,10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125"/>
+            <Label x:Name="Qu2" Content="Enter Module Name: " HorizontalAlignment="Left" Height="42" Padding="10,15,10,10" Foreground="White" Margin="332,138,0,0" VerticalAlignment="Top" Width="131"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="42" Margin="468,140,0,0" TextWrapping="Wrap" Text="" Padding="10,10,10,10" VerticalAlignment="Top" Width="126"/>
+            <Label x:Name="Qu3" Content="Num of Credits: " Foreground="White" Padding="10,10,10,10" HorizontalAlignment="Left" Height="39" Margin="44,239,0,0" VerticalAlignment="Top" Width="139"/>
+            <TextBox x:Name="ModuleCredits" HorizontalAlignment="Left" Height="42" Padding="10,10,10,10" Margin="186,236,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="122"/>
+            <Label x:Name="Qu4" Content="Class hours per Week:" HorizontalAlignment="Left" Foreground="White" Padding="7,12,10,10" Height="42" Margin="348,236,0,0" VerticalAlignment="Top" Width="133"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="42" Margin="481,236,0,0" Padding="10,10,10,10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.478,0.535"/>
+            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" BorderBrush="RosyBrown" Background="Transparent" Foreground="Gray" Height="36" Margin="264,338,0,0" VerticalAlignment="Top" Width="134" Cursor="Hand" IsEnabled="True" ForceCursor="False"/>
+        </Grid>
+
+
+
+    </Grid>
+</Window>
